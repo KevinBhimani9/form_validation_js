@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <!-- flaticon -->
+    <link rel="shortcut icon" href="img/1.png" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- cssstyle -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="h1">
+        <h1>LOGIN FORM</h1>
+    </div>
+
+    <section class="a">
+        <div class="container">
+            <div class="img"><img src="img/1.png"></div>
+            <div class="content">
+                <div class="content-text">
+                    <h2> LOG-IN</h2>
+                    <form>
+                        <input type="text" placeholder="Name" id="name">
+                        <input type="email" placeholder="Email" id="email">
+                        <input type="password" placeholder="Password" id="password">
+                        <input type="password" placeholder="Confirm Password" id="confirm_password">
+                        <input class="gmail" onclick="save()" ; type="button" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<script type="text/javascript">
+
+
+    let data = [];
+
+    const save = () => {
+
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        let confirm_password = document.getElementById('confirm_password').value;
+
+        let obj = {
+
+            name: name,
+            email: email,
+            password: password,
+            confirm_password: confirm_password
+
+        }
+        data.push(obj);
+
+        
+
+        function validemail(email) {
+
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+             if ( email.match(mailformat)){
+               return true;
+             }
+             else{
+                alert("Please enter valid Email");
+             }
+
+        }validemail(email);
+
+        function conpass (password , confirm_password){
+
+            if ( password.match(confirm_password)){
+                
+                alert("Your Password is correct");
+            }
+            else{
+                
+                alert("Please Enter same Password");
+            }
+        }conpass(password , confirm_password);
+
+    }
+
+</script>

@@ -1,0 +1,85 @@
+body {
+    background: #d0eaf3;
+}
+
+.h1 {
+    font-family: 'Audiowide';
+    color: #3a7b99;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.a {
+    position: relative;
+    width: 1140px;
+    margin: auto;
+    box-shadow: 15px 15px 10px 5px rgb(145, 197, 212);
+    box-sizing: border-box;
+    border: 0.5px solid rgb(8, 46, 48);
+}
+
+.img {
+    width: 50%;
+    height: 600px;
+    background-color: white;
+    box-sizing: border-box;
+    position: relative;
+}
+.img img{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-10%);
+}
+
+.content {
+    width: 50%;
+    height: 600px;
+    background-color: #4a8ca1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.content-text{
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.content-text input{
+    width: 100%;
+    padding: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 25px 25px 25px 25px;
+    letter-spacing: 3px;
+}
+.content-text input:hover{
+    transition: 0.5s;
+    cursor:text;
+    box-sizing: border-box;
+}
+.content-text span{
+    font-size: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+h2{
+    margin: 10px auto;
+    color: white;
+    font-size: 30px;
+    font-family: 'Audiowide';
+    text-align: center;
+}
+.gmail:hover{
+    background:linear-gradient(-120deg,#76ebdd, #9787a4,#00dffd,#d835ea);
+    transition: 0.5s;
+    color: white;
+}
